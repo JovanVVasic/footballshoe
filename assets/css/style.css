@@ -1,0 +1,1129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* index.html */
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #2c374a;
+}
+
+header .container {
+  margin: 0px auto;
+  width: 90%;
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .container .logo {
+  width: 10%;
+  height: 50%;
+  margin-top: 20px;
+}
+
+header .container .nav-bar {
+  width: 40%;
+  height: 50%;
+  margin-top: 20px;
+}
+
+header .container .nav-bar ul {
+  list-style-type: none;
+}
+
+header .container .nav-bar ul li {
+  float: left;
+  margin-right: 80px;
+  margin-top: 10px;
+}
+
+header .container .nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header .container .nav-bar ul li a:hover {
+  color: #060606;
+}
+
+#banner {
+  width: 100%;
+  height: 650px;
+  background-image: url(../img/football.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+#best-products {
+  margin: 0px auto;
+  width: 90%;
+  margin-top: 30px;
+}
+
+#best-products .container {
+  margin: 0px auto;
+  width: 90%;
+  height: 700px;
+  text-align: center;
+}
+
+#best-products .container h2 {
+  font-size: 40px;
+  font-weight: lighter;
+  color: #2c374a;
+}
+
+#best-products .container .best-products-drzac {
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#best-products .container .best-products-drzac .best-products-article {
+  width: 370px;
+  height: 600px;
+}
+
+#best-products .container .best-products-drzac .best-products-article .best-products-picture {
+  width: 100%;
+  height: 500px;
+}
+
+#best-products .container .best-products-drzac .best-products-article h3 {
+  font-size: 35px;
+  color: #2c374a;
+  font-weight: lighter;
+}
+
+#best-products .container .best-products-drzac .best-products-article .best-products-button {
+  margin: 0px auto;
+  width: 25%;
+  height: 30px;
+  background-color: #2450bf;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#best-products .container .best-products-drzac .best-products-article .best-products-button a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: 3px;
+}
+
+#best-products .container .best-products-drzac .best-products-article .best-products-button a:hover {
+  font-weight: bold;
+}
+
+#marks {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#marks .marks-div {
+  width: 100%;
+  height: 550px;
+}
+
+#marks .marks-div .container {
+  margin: 0px auto;
+  width: 90%;
+  position: relative;
+  top: 45px;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+#marks .marks-div .container .marks-levo, #marks .marks-div .container .marks-desno {
+  width: 600px;
+  height: 400px;
+  margin-top: 15px;
+}
+
+#marks .marks-div .container .slika-1 {
+  background-size: cover;
+  background-position: center;
+}
+
+#marks .marks-div .container .belo {
+  color: white;
+}
+
+#marks .black {
+  background-color: #060606;
+}
+
+.marks-h {
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.moto {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.description-text {
+  margin: 20px auto;
+  width: 70%;
+  height: 150px;
+}
+
+.description-text p {
+  font-size: 20px;
+}
+
+.description-text .marks-buy-now {
+  margin: 10px auto;
+  width: 30%;
+  height: 40px;
+  background-color: #2450bf;
+  border-radius: 10px;
+}
+
+.description-text .marks-buy-now a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: 7px;
+  font-size: 20px;
+}
+
+.description-text .marks-buy-now a:hover {
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #2c374a;
+}
+
+footer .container {
+  margin: 0px auto;
+  width: 90%;
+  height: 80%;
+  position: relative;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+}
+
+footer .container .footer-description {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+}
+
+footer .container .footer-description h5 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+footer .container .footer-description p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+footer .container .footer-contact {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+footer .container .footer-contact h5 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+footer .container .footer-contact ul {
+  list-style-type: none;
+}
+
+footer .container .footer-contact ul li {
+  margin-top: 14px;
+}
+
+footer .container .footer-contact ul li a {
+  font-size: 22px;
+  color: white;
+}
+
+footer .container .footer-contact ul li a:hover {
+  color: #060606;
+}
+
+footer .container .opening-hours {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+footer .container .opening-hours h5 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+footer .container .opening-hours ul {
+  list-style-type: none;
+}
+
+footer .container .opening-hours ul li {
+  margin-top: 17px;
+  font-size: 19px;
+}
+
+/* shop.html */
+main {
+  margin: 0px auto;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+main .container {
+  margin: 0px auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container #main-levo {
+  width: 30%;
+}
+
+main .container #main-levo h2 {
+  text-align: center;
+  font-weight: lighter;
+  color: #2c374a;
+  font-size: 40px;
+}
+
+main .container #main-levo #sort-form {
+  margin-top: 40px;
+}
+
+main .container #main-levo #sort-form #sort {
+  width: 100%;
+  height: 40px;
+  border: 3px solid #2c374a;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: #2c374a;
+}
+
+main .container #main-levo h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #2c374a;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+main .container #main-levo #brends-form, main .container #main-levo #price-form {
+  font-size: 20px;
+}
+
+main .container #main-levo #brends-form ul, main .container #main-levo #price-form ul {
+  list-style-type: none;
+}
+
+main .container #main-levo #brends-form ul li, main .container #main-levo #price-form ul li {
+  color: #2c374a;
+}
+
+main .container #main-levo #brends-form ul li .brendovi, main .container #main-levo #brends-form ul li .price, main .container #main-levo #price-form ul li .brendovi, main .container #main-levo #price-form ul li .price {
+  width: 25px;
+  height: 25px;
+  margin-left: 140px;
+  margin-right: 10px;
+}
+
+main .container #main-levo #search-form {
+  margin-top: 40px;
+  width: 100%;
+}
+
+main .container #main-levo #search-form #search {
+  width: 100%;
+  height: 40px;
+  border: 3px solid #2c374a;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main .container #main-desno {
+  width: 67%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .container #main-desno .artikl {
+  height: 350px;
+  width: 23%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main .container #main-desno .artikl .artikl-picture {
+  width: 100%;
+  height: 50%;
+}
+
+main .container #main-desno .artikl .artikl-picture .artikl-slika {
+  width: 100%;
+  height: 100%;
+}
+
+main .container #main-desno .artikl h5 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+main .container #main-desno .artikl .artikl-text {
+  font-size: 21px;
+  color: #2c374a;
+}
+
+main .container #main-desno .artikl p {
+  margin-top: 10px;
+}
+
+main .container #main-desno .artikl .add-to-chart {
+  width: 100%;
+  height: 40px;
+  background-color: #2c374a;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+main .container #main-desno .artikl .add-to-chart .dodaj {
+  border: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 7px;
+  background-color: #2c374a;
+}
+
+main .container #main-desno .artikl .add-to-chart .dodaj:hover {
+  color: black;
+}
+
+main .container #main-desno .prazno-artikli p {
+  font-size: 50px;
+  font-weight: bold;
+  color: #2c374a;
+  margin-top: 200px;
+}
+
+#cart {
+  width: 60px;
+  height: 60px;
+  background-color: #2c374a;
+  border-radius: 100px;
+  position: fixed;
+  top: 13px;
+  right: 40px;
+  text-align: center;
+}
+
+#cart a {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 12px;
+  font-size: 30px;
+}
+
+#cart #broj-porudzbina {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  color: white;
+  background-color: red;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+/* contact.html */
+#contact-main {
+  margin: 0px auto;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#contact-main .container {
+  margin: 0px auto;
+  width: 90%;
+  height: 400px;
+}
+
+#contact-main .container h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  color: #2c374a;
+}
+
+#contact-main .container .forms {
+  width: 100%;
+  height: 300px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact-main .container .forms .forms-part {
+  width: 48%;
+  height: 100%;
+}
+
+#contact-main .container .forms .forms-part #form-left .input-edit {
+  width: 97%;
+  height: 40px;
+  margin-bottom: 40px;
+  border: none;
+  padding-left: 20px;
+}
+
+#contact-main .container .forms .forms-part #form-right #message {
+  width: 97%;
+  border: none;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+#contact-main .container .forms .forms-part #form-right #submit-button {
+  width: 100%;
+  background-color: #2c374a;
+  height: 40px;
+  color: white;
+  text-align: center;
+  margin: 30px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact-main .container .forms .forms-part #form-right #submit-button:hover {
+  background-color: #060606;
+}
+
+#message-sent {
+  visibility: hidden;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  background-color: #c5dbc8;
+  border-radius: 5px;
+}
+
+#message-sent p {
+  position: relative;
+  top: 10px;
+}
+
+/* cart.html */
+#main-korpa {
+  margin: 0px auto;
+  width: 90%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#main-korpa .container {
+  margin: 0px auto;
+  width: 90%;
+}
+
+#main-korpa .container .nothing-selected {
+  width: 100%;
+  height: 300px;
+}
+
+#main-korpa .container .nothing-selected p {
+  text-align: center;
+  font-size: 50px;
+  color: #2c374a;
+  margin-top: 100px;
+}
+
+#main-korpa .container .drzac-korpa {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-korpa .container .drzac-korpa .korpa-blok {
+  width: 24%;
+  height: 100%;
+  text-align: center;
+}
+
+#main-korpa .container .drzac-korpa .korpa-blok p {
+  margin-top: 70px;
+  font-size: 25px;
+}
+
+#main-korpa .container .drzac-korpa .korpa-blok img {
+  width: 190px;
+  height: 190px;
+}
+
+#main-korpa .container .border-dole {
+  border-bottom: 1px solid #2c374a;
+}
+
+#main-korpa .container .add-remove {
+  width: 70%;
+  height: 40px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main-korpa .container .add-remove .add-quantity {
+  width: 25%;
+  height: 100%;
+  background-color: #9ad6aa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#main-korpa .container .add-remove .add-quantity .add-one-more {
+  background-color: #9ad6aa;
+  border: none;
+  font-size: 17px;
+  position: relative;
+  top: 8px;
+}
+
+#main-korpa .container .add-remove .add-quantity .add-one-more:hover {
+  font-weight: bold;
+}
+
+#main-korpa .container .add-remove .remove-product {
+  width: 25%;
+  height: 100%;
+  background-color: #c7968f;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#main-korpa .container .add-remove .remove-product .product-remove {
+  background-color: #c7968f;
+  border: none;
+  font-size: 17px;
+  position: relative;
+  top: 8px;
+}
+
+#main-korpa .container .add-remove .remove-product .product-remove:hover {
+  font-weight: bold;
+}
+
+#main-korpa .container .add-remove .quantity-down {
+  width: 25%;
+  height: 100%;
+  background-color: #dbdaa9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#main-korpa .container .add-remove .quantity-down .down-quantity {
+  background-color: #dbdaa9;
+  border: none;
+  font-size: 17px;
+  position: relative;
+  top: 8px;
+}
+
+#main-korpa .container .add-remove .quantity-down .down-quantity:hover {
+  font-weight: bold;
+}
+
+#main-korpa #sum-all {
+  width: 40%;
+  height: 50px;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-korpa #sum-all #purchase-div {
+  width: 30%;
+  height: 80%;
+  background-color: #a9b6d9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#main-korpa #sum-all #purchase-div #purchase {
+  background-color: #a9b6d9;
+  border: none;
+  font-size: 17px;
+  position: relative;
+  top: 8px;
+}
+
+#main-korpa #sum-all #purchase-div #purchase:hover {
+  font-weight: bold;
+}
+
+#main-korpa #sum-all #remove-all-div {
+  width: 30%;
+  height: 80%;
+  background-color: #c7968f;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#main-korpa #sum-all #remove-all-div #remove-all {
+  background-color: #c7968f;
+  border: none;
+  font-size: 17px;
+  position: relative;
+  top: 8px;
+}
+
+#main-korpa #sum-all #remove-all-div #remove-all:hover {
+  font-weight: bold;
+}
+
+#main-korpa #sum-all #price-summary {
+  width: 30%;
+  height: 80%;
+}
+
+#main-korpa #sum-all #price-summary p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* responsive design */
+/* index.html */
+@media only screen and (max-width: 1441px) {
+  header .container .nav-bar ul li {
+    margin-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  header .container .nav-bar ul li {
+    margin-right: 30px;
+  }
+  #best-products .container {
+    height: 1250px;
+  }
+  .description-text .marks-buy-now {
+    width: 40%;
+  }
+  footer .container .footer-description p {
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  header {
+    height: 130px;
+  }
+  header .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: center;
+  }
+  header .container .logo {
+    width: 60%;
+  }
+  header .container .nav-bar {
+    width: 50%;
+  }
+  header .container .nav-bar ul li {
+    margin-right: 34px;
+  }
+  #best-products .container h2 {
+    font-size: 35px;
+  }
+  #best-products .container {
+    height: 1850px;
+  }
+  #marks .marks-div {
+    height: 1000px;
+  }
+  #marks .marks-div .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .container .footer-description p {
+    line-height: 18px;
+    font-size: 15px;
+  }
+  footer .container .opening-hours ul li {
+    font-size: 16px;
+  }
+  footer .container .footer-description h5 {
+    font-size: 20px;
+  }
+  footer .container .footer-contact h5 {
+    font-size: 20px;
+  }
+  footer .container .opening-hours h5 {
+    font-size: 20px;
+  }
+  #marks .marks-div .container .marks-levo img {
+    width: 400px;
+    height: 300px;
+  }
+  #marks .marks-div .container .marks-desno img {
+    width: 400px;
+    height: 300px;
+  }
+  footer {
+    height: 400px;
+  }
+  footer .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .container .footer-description {
+    width: 80%;
+    height: 47%;
+  }
+  footer .container .footer-contact {
+    width: 40%;
+    height: 47%;
+    margin-top: 20px;
+  }
+  footer .container .opening-hours {
+    width: 40%;
+    height: 47%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  header .container .nav-bar {
+    width: 20%;
+    height: 130px;
+  }
+  header .container .logo {
+    width: 85%;
+  }
+  header {
+    height: 220px;
+  }
+  header .container .nav-bar ul li {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  header .container .nav-bar ul li {
+    margin-left: 0px;
+  }
+  #best-products .container {
+    height: 2000px;
+  }
+  #marks .marks-div .container .marks-levo img {
+    width: 370px;
+  }
+  #marks .marks-div .container .marks-desno img {
+    width: 370px;
+  }
+  footer .container {
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  #marks .marks-div .container .marks-levo img {
+    width: 320px;
+  }
+  #marks .marks-div .container .marks-desno img {
+    width: 320px;
+  }
+  footer {
+    height: 600px;
+  }
+  footer .container .footer-description, footer .container .footer-contact, footer .container .opening-hours {
+    width: 80%;
+    height: 33%;
+    margin-bottom: 20px;
+  }
+  #best-products .container h2 {
+    font-size: 28px;
+  }
+}
+
+/* shop.html */
+@media only screen and (max-width: 1025px) {
+  main .container #main-levo #brends-form ul li .brendovi {
+    margin-left: 80px;
+  }
+  main .container #main-levo #price-form ul li .price {
+    margin-left: 80px;
+  }
+  main .container #main-desno .artikl {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  main .container #main-levo #brends-form ul li .brendovi, main .container #main-levo #price-form ul li .price {
+    margin-left: 50px;
+  }
+  main .container #main-desno .artikl {
+    width: 45%;
+  }
+  #cart {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  main .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main .container #main-levo {
+    width: 80%;
+  }
+  main .container #main-desno {
+    width: 80%;
+  }
+  main .container #main-desno .artikl {
+    width: 60%;
+  }
+  #cart a {
+    font-size: 22px;
+    top: 8px;
+  }
+  #cart #broj-porudzbina {
+    width: 10px;
+    height: 10px;
+    font-size: 9px;
+  }
+  #cart {
+    width: 40px;
+    height: 40px;
+  }
+  main .container #main-levo h2 {
+    font-size: 30px;
+  }
+  main .container #main-levo #sort-form #sort {
+    height: 30px;
+  }
+  main .container #main-levo #brends-form ul li .brendovi, main .container #main-levo #price-form ul li .price {
+    width: 20px;
+    height: 20px;
+  }
+  main .container #main-levo #search-form #search {
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  main .container #main-desno .artikl {
+    width: 80%;
+  }
+  #cart {
+    top: 10px;
+    right: 20px;
+  }
+}
+
+/* contact.html */
+@media only screen and (max-width: 1025px) {
+  #contact-main .container h2 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  #contact-main .container {
+    height: 700px;
+  }
+  #contact-main .container .forms {
+    height: 600px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #contact-main .container .forms .forms-part {
+    width: 90%;
+    height: 50%;
+  }
+  #contact-main .container h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  #contact-main .container h2 {
+    font-size: 22px;
+  }
+}
+
+/* cart.html */
+@media only screen and (max-width: 770px) {
+  #main-korpa .container .drzac-korpa .korpa-blok img {
+    width: 150px;
+    height: 150px;
+  }
+  #main-korpa .container .add-remove {
+    width: 82%;
+  }
+  #main-korpa #sum-all {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  #main-korpa .container .drzac-korpa .korpa-blok p {
+    font-size: 17px;
+  }
+  #main-korpa .container .drzac-korpa .korpa-blok img {
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+  }
+  #main-korpa .container .add-remove .add-quantity .add-one-more {
+    font-size: 12px;
+  }
+  #main-korpa .container .add-remove .quantity-down .down-quantity {
+    font-size: 12px;
+  }
+  #main-korpa .container .add-remove .remove-product .product-remove {
+    font-size: 12px;
+  }
+  #main-korpa .container .add-remove {
+    width: 90%;
+  }
+  #main-korpa .container .add-remove .remove-product {
+    width: 29%;
+  }
+  #main-korpa #sum-all #price-summary p {
+    font-size: 15px;
+  }
+  #main-korpa #sum-all #purchase-div #purchase, #main-korpa #sum-all #remove-all-div #remove-all {
+    font-size: 15px;
+  }
+  #main-korpa #sum-all {
+    width: 70%;
+  }
+  #main-korpa #sum-all #remove-all-div {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  #main-korpa .container .drzac-korpa .korpa-blok p {
+    font-size: 14px;
+  }
+  #main-korpa .container .drzac-korpa .korpa-blok img {
+    width: 75px;
+    height: 75px;
+  }
+  #main-korpa .container .add-remove .add-quantity {
+    width: 30%;
+  }
+  #main-korpa .container .add-remove .quantity-down {
+    width: 30%;
+  }
+  #main-korpa .container .add-remove .remove-product {
+    width: 33%;
+  }
+  #main-korpa #sum-all #remove-all-div {
+    width: 37%;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  #main-korpa .container .drzac-korpa .korpa-blok img {
+    width: 60px;
+    height: 60px;
+  }
+  #main-korpa .container .add-remove {
+    width: 100%;
+  }
+  #main-korpa .container .add-remove .remove-product {
+    width: 35%;
+  }
+  #main-korpa #sum-all {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

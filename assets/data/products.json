@@ -1,0 +1,192 @@
+[
+    {
+        "id":1,
+        "brandId":1,
+        "name": "Nike Tiempo Legend 9",
+        "price":{
+            "oldPrice": 200,
+            "newPrice": 155
+        },
+        "image": "nike-tiempo.jpg"
+    },
+    {
+        "id":2,
+        "brandId":1,
+        "name": "Nike Mercurial Superfly",
+        "price":{
+            "oldPrice": 250,
+            "newPrice": 165
+        },
+        "image": "nike-superfly2.jpg"
+    },
+    {
+        "id":3,
+        "brandId":2,
+        "name": "Adidas Copa 20.1",
+        "price":{
+            "oldPrice": 150,
+            "newPrice": 140
+        },
+        "image": "adidas-copa.jpg"
+    },
+    {
+        "id":4,
+        "brandId":4,
+        "name": "Mizuno Morilea Neo",
+        "price":{
+            "oldPrice": 300,
+            "newPrice": 222
+        },
+        "image": "mizuno-morilea6.jpg"
+    },
+    {
+        "id":5,
+        "brandId":3,
+        "name": "Puma Future Z",
+        "price":{
+            "oldPrice": 170,
+            "newPrice": 145
+        },
+        "image": "puma-future.webp"
+    },
+    {
+        "id":6,
+        "brandId":2,
+        "name": "Adidas Predator Egde",
+        "price":{
+            "oldPrice": 230,
+            "newPrice": 179
+        },
+        "image": "adidas-predator.jpg"
+    },
+    {
+        "id":7,
+        "brandId":1,
+        "name": "Nike Phantom GT Pro",
+        "price":{
+            "oldPrice": 200,
+            "newPrice": 150
+        },
+        "image": "nike-phantom.jpg"
+    },
+    {
+        "id":8,
+        "brandId":4,
+        "name": "Mizuno Morliea Pro",
+        "price":{
+            "oldPrice": 300,
+            "newPrice": 222
+        },
+        "image": "mizuno-morilea-pro.jpg"
+    },
+    {
+        "id":9,
+        "brandId":3,
+        "name": "Puma Ultra 1.2",
+        "price":{
+            "oldPrice": 160,
+            "newPrice": 144
+        },
+        "image": "puma-ultra.webp"
+    },
+    {
+        "id":10,
+        "brandId":2,
+        "name": "Adidas Nemeziz 19",
+        "price":{
+            "oldPrice": 320,
+            "newPrice": 270
+        },
+        "image": "adidas-nemeziz.jpg"
+    },
+    {
+        "id":11,
+        "brandId":4,
+        "name": "Mizuno Morliea Elite",
+        "price":{
+            "oldPrice": 300,
+            "newPrice": 222
+        },
+        "image": "mizuno-morilea-elite.webp"
+    },
+    {
+        "id":12,
+        "brandId":3,
+        "name": "Puma King Platinum",
+        "price":{
+            "oldPrice": 277,
+            "newPrice": 210
+        },
+        "image": "puma-king.webp"
+    },
+    {
+        "id":13,
+        "brandId":1,
+        "name": "Nike Vapor Superfly",
+        "price":{
+            "oldPrice": 250,
+            "newPrice": 190
+        },
+        "image": "nike-mercurial-superfly.webp"
+    },
+    {
+        "id":14,
+        "brandId":1,
+        "name": "Nike Phantom GT Elite",
+        "price":{
+            "oldPrice": 220,
+            "newPrice": 200
+        },
+        "image": "nike-phantom-gt.webp"
+    },
+    {
+        "id":15,
+        "brandId":3,
+        "name": "Puma King Top",
+        "price":{
+            "oldPrice": 150,
+            "newPrice": 110
+        },
+        "image": "puma-king-top.webp"
+    },
+    {
+        "id":16,
+        "brandId":4,
+        "name": "Mizuno Rebula 2",
+        "price":{
+            "oldPrice": 300,
+            "newPrice": 222
+        },
+        "image": "mizuno-rebula.jpg"
+    },
+    {
+        "id":17,
+        "brandId":2,
+        "name": "Adidas World Cup",
+        "price":{
+            "oldPrice": 200,
+            "newPrice": 160
+        },
+        "image": "adidas-wc.jpg"
+    },
+    {
+        "id":18,
+        "brandId":3,
+        "name": "Puma Ultra 1.3",
+        "price":{
+            "oldPrice": 230,
+            "newPrice": 205
+        },
+        "image": "puma-ultra-1.jpg"
+    },
+    {
+        "id":19,
+        "brandId":2,
+        "name": "Adidas Predator 20.3",
+        "price":{
+            "oldPrice": 170,
+            "newPrice": 130
+        },
+        "image": "adidas-predator-20.jpg"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Nike",
+        "picture": "nike-brand-5.jpg",
+        "moto":"Make the game easy",
+        "description": "Nike, Inc. is an American multinational corporation which is the world's largest supplier and manufacturer of athletic shoes, apparel and other sports equipment."
+    },
+    {
+        "id": 2,
+        "name": "Adidas",
+        "picture": "adidas-brand-4.jpg",
+        "moto":"Worn by the best",
+        "description": "Adidas is a German manufacturer of sports equipment. Adidas is a small European manufacturer of sports equipment. The logo of this company represents three parallel lines."
+    },
+    {
+        "id": 3,
+        "name": "Puma",
+        "picture": "puma.webp",
+        "moto": "Faster than you imagine",
+        "description": "Puma is a German multinational sports equipment manufacturer based in Herzogenaurach, Bavaria.Puma is known as a sponsor of Jusein Bolt and the athletic team from Jamaica."
+    },
+    {
+        "id": 4,
+        "name": "Mizuno",
+        "picture": "mizuno.jpg",
+        "moto": "Stick to the Quality",
+        "description": "Mizuno Corporation is a Japanese sports equipment and sportswear company. A wide variety of sports:  golf, tennis, baseball, volleyball, football, running, rugby, skiing, swimming, cycling, judo, table tennis, badminton, boxing and athletics."
+    }
+]

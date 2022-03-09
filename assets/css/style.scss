@@ -1,0 +1,1039 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@mixin centar {
+    margin: 0px auto;
+    width: 90%;
+}
+$mainBoja: #2c374a;
+body{
+    background-color: whitesmoke;
+}
+
+
+
+
+
+/* index.html */
+header{
+    width: 100%;
+    height: 90px;
+    background-color: $mainBoja;
+    .container{
+        @include centar;
+        height: 88px;
+        //border: 1px solid yellow;
+        display: flex;
+        justify-content: space-evenly;
+        .logo{
+            width: 10%;
+            height: 50%;
+            margin-top: 20px;
+            //background-color: yellow;
+            
+        }
+        .nav-bar{
+            width: 40%;
+            height: 50%;
+            margin-top: 20px;
+            //background-color: yellow;
+            ul{
+                list-style-type: none;
+                li{
+                    float: left;
+                    margin-right: 80px;
+                    margin-top: 10px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        &:hover{color: #060606;}
+                    }
+                }
+            }
+        }
+    }
+}
+#banner{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/football.webp);
+    background-size:cover;
+    background-position: center;
+}
+#best-products{
+    @include centar;
+    margin-top: 30px;
+    .container{
+        @include centar;
+        height: 700px;
+        //border: 1px solid black;
+        text-align: center;
+        h2{
+            font-size: 40px;
+            font-weight: lighter;
+            color: $mainBoja;
+        }
+        .best-products-drzac{
+            margin: 0px auto;
+            margin-top: 20px;
+            //border: 1px solid black;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .best-products-article{
+                width: 370px;
+                height: 600px;
+                //border: 1px solid black;
+                .best-products-picture{
+                    width: 100%;
+                    height: 500px;
+                    //border: 1px solid black;
+                }
+                h3{
+                    font-size: 35px;
+                    color: $mainBoja;
+                    font-weight: lighter;
+                }
+                .best-products-button{
+                    margin: 0px auto;
+                    width: 25%;
+                    height: 30px;
+                    background-color: #2450bf;
+                    border-radius: 10px;
+                    text-align: center;
+                    a{
+                        font-size: 20px;
+                        color: white;
+                        text-decoration: none;
+                        position: relative;
+                        top: 3px;
+                        &:hover{font-weight: bold;}
+                    }
+                }
+            }
+        }
+    }
+}
+#marks{
+    width: 100%;
+    margin-top: 50px;
+    //border: 4px solid yellow;
+    .marks-div{
+        width: 100%;
+        height: 550px;
+        //background-color: aqua;
+        .container{
+            @include centar;
+            position: relative;
+            top: 45px;
+            //border: 1px solid yellow;
+            height: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            .marks-levo,.marks-desno{
+                width: 600px;
+                height: 400px;
+                //border: 1px solid orangered;
+                margin-top: 15px;
+            }
+            .slika-1{
+                background-size: cover;
+                background-position: center;
+            }
+            .belo{
+                color: white;
+            }
+            
+        }
+    }
+    .black{
+        background-color: #060606;
+    }
+}
+.marks-h{
+    font-size: 40px;
+    margin-top: 50px;
+}
+.moto{
+    margin-top: 10px;
+    font-size: 30px;
+}
+.description-text{
+    margin: 20px auto;
+    width: 70%;
+    height: 150px;
+    //border: 1px solid white;
+    p{
+        font-size: 20px;
+    }
+    .marks-buy-now{
+        margin: 10px auto;
+        width: 30%;
+        height: 40px;
+        background-color: #2450bf;
+        border-radius: 10px;
+        a{
+            color: white;
+            text-decoration: none;
+            position: relative;
+            top: 7px;
+            font-size: 20px;
+            &:hover{font-weight: bold;}
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: $mainBoja;
+    .container{
+        @include centar;
+        //border: 1px solid yellow;
+        height: 80%;
+        position: relative;
+        top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        .footer-description{
+            width: 40%;
+            height: 100%;
+            //border: 1px solid white;
+            text-align: center;
+            h5{
+                font-size: 22px;
+                font-weight: lighter;
+            }
+            p{
+                font-size: 18px;
+                line-height: 25px;
+                margin-top: 20px;
+            }
+        }
+        .footer-contact{
+            width: 20%;
+            height: 100%;
+            //border: 1px solid white;
+            text-align: center;
+            h5{
+                font-size: 22px;
+                font-weight: lighter;
+            }
+            ul{
+                list-style-type: none;
+                li{
+                    margin-top: 14px;
+                    a{
+                        font-size: 22px;
+                        color: white;
+                        &:hover{color: #060606;}
+                    }
+                }
+            }
+        }
+        .opening-hours{
+            width: 20%;
+            height: 100%;
+            //border: 1px solid white;
+            text-align: center;
+            h5{
+                font-size: 22px;
+                font-weight: lighter;
+            }
+            ul{
+                list-style-type: none;
+                li{
+                    margin-top: 17px;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* shop.html */
+main{
+    @include centar;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .container{
+        @include centar;
+        //height: 600px;
+        //border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        #main-levo{
+            width: 30%;
+            //height: 600px;
+            //border: 1px solid blue;
+            h2{
+                text-align: center;
+                font-weight: lighter;
+                color: $mainBoja;
+                font-size: 40px;
+            }
+            #sort-form{
+                //border: 1px solid red;
+                margin-top: 40px;
+                #sort{
+                    width: 100%;
+                    height: 40px;
+                    border: 3px solid $mainBoja;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size: 20px;
+                    color: $mainBoja;
+                }
+            }
+            h3{
+                text-align: center;
+                font-size: 25px;
+                font-weight: lighter;
+                color: $mainBoja;
+                margin-top: 30px;
+                margin-bottom: 5px;
+            }
+            #brends-form, #price-form{
+                font-size: 20px;
+                ul{
+                    list-style-type: none;
+                    li{
+                        color: $mainBoja;
+                        .brendovi, .price{
+                            width: 25px;
+                            height: 25px;
+                            margin-left: 140px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            #search-form{
+                margin-top: 40px;
+                width: 100%;
+                #search{
+                    width: 100%;
+                    height: 40px;
+                    border: 3px solid $mainBoja;
+                    font-size: 20px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
+        #main-desno{
+            width: 67%;
+            //height: 600px;
+            //border: 1px solid blue;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .artikl{
+                height: 350px;
+                width: 23%;
+                //border: 1px solid black;
+                margin-bottom: 20px;
+                text-align: center;
+                .artikl-picture{
+                    width: 100%;
+                    height: 50%;
+                    //border: 1px solid red;
+                    .artikl-slika{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                h5{
+                    font-size: 18px;
+                    font-weight: lighter;
+                }
+                .artikl-text{
+                    font-size: 21px;
+                    color: $mainBoja;
+                }
+                p{
+                    margin-top: 10px;
+                }
+                .add-to-chart{
+                    width: 100%;
+                    height: 40px;
+                    background-color: $mainBoja;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    .dodaj{
+                        border: none;
+                        color: white;
+                        font-size: 20px;
+                        position: relative;
+                        top: 7px;
+                        background-color: $mainBoja;
+                        &:hover{color: black;}
+                    }
+                }
+            }
+            .prazno-artikli{
+                p{
+                    font-size: 50px;
+                    font-weight: bold;
+                    color: $mainBoja;
+                    margin-top: 200px;
+                }
+            }
+        }
+    }
+}
+#cart{
+    width: 60px;
+    height: 60px;
+    background-color: $mainBoja;
+    border-radius: 100px;
+    position: fixed;
+    top: 13px;
+    right: 40px;
+    text-align: center;
+    a{
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 12px;
+        font-size: 30px;
+    }
+    #broj-porudzbina{
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+        color: white;
+        background-color: red;
+        font-size: 14px;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+/* contact.html */
+#contact-main{
+    @include centar;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .container{
+        @include centar;
+        height: 400px;
+        //border: 1px solid black;
+        h2{
+            font-size: 30px;
+            font-weight: lighter;
+            color: $mainBoja;
+        }
+        .forms{
+            width: 100%;
+            height: 300px;
+            margin-top: 40px;
+            //border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            .forms-part{
+                width: 48%;
+                height: 100%;
+                //border: 1px solid black;
+                #form-left{
+                    .input-edit{
+                        width: 97%;
+                        height: 40px;
+                        margin-bottom: 40px;
+                        border: none;
+                        padding-left: 20px;
+                    }
+                }
+                #form-right{
+                    #message{
+                        width: 97%;
+                        border: none;
+                        padding-left: 20px;
+                        padding-top: 10px;
+                    }
+                    #submit-button{
+                        width: 100%;
+                        background-color: $mainBoja;
+                        height: 40px;
+                        color: white;
+                        text-align: center;
+                        margin: 30px auto;
+                        border: none;
+                        border-radius: 5px;
+                        &:hover{background-color: #060606;}
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
+#message-sent{
+    visibility:hidden;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: #c5dbc8;
+    border-radius: 5px;
+    p{
+      position: relative;
+      top: 10px;  
+    }
+}
+
+
+/* cart.html */
+
+#main-korpa{
+    @include centar;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .container{
+        @include centar;
+        //height: 500px;
+        //border: 1px solid red;
+        .nothing-selected{
+            width: 100%;
+            height: 300px;
+            //border: 1px solid red;
+            p{
+                text-align: center;
+                font-size: 50px;
+                color: $mainBoja;
+                margin-top: 100px;
+            }
+        }
+        .drzac-korpa{
+            width: 100%;
+            height: 200px;
+            //border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            .korpa-blok{
+                width: 24%;
+                height: 100%;
+                //border: 1px solid blue;
+                text-align: center;
+                p{
+                    margin-top: 70px;
+                    font-size: 25px;
+                }
+                img{
+                    width: 190px;
+                    height: 190px;
+                    //border: 1px solid black;
+                }
+            }
+        }
+        .border-dole{
+            border-bottom: 1px solid $mainBoja;
+        }
+        .add-remove{
+            width: 70%;
+            height: 40px;
+            //border: 1px solid black;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-evenly;
+            .add-quantity{
+                width: 25%;
+                height: 100%;
+                background-color: #9ad6aa;
+                border-radius: 10px;
+                text-align: center;
+                .add-one-more{
+                    background-color: #9ad6aa;
+                    border: none;
+                    font-size: 17px;
+                    position: relative;
+                    top: 8px;
+                    &:hover{font-weight: bold;}
+                }
+            }
+            .remove-product{
+                width: 25%;
+                height: 100%;
+                background-color: #c7968f;
+                border-radius: 10px;
+                text-align: center;
+                .product-remove{
+                    background-color: #c7968f;
+                    border: none;
+                    font-size: 17px;
+                    position: relative;
+                    top: 8px;
+                    &:hover{font-weight: bold;}
+                }
+            }
+            .quantity-down{
+                width: 25%;
+                height: 100%;
+                background-color: #dbdaa9;
+                border-radius: 10px;
+                text-align: center;
+                .down-quantity{
+                    background-color: #dbdaa9;
+                    border: none;
+                    font-size: 17px;
+                    position: relative;
+                    top: 8px;
+                    &:hover{font-weight: bold;}
+                }
+            }
+        }
+    }
+    #sum-all{
+        width: 40%;
+        height: 50px;
+        //border: 1px solid black;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        #purchase-div{
+            width: 30%;
+            height: 80%;
+            background-color: #a9b6d9;
+            border-radius: 5px;
+            text-align: center;
+            #purchase{
+                background-color: #a9b6d9;
+                border: none;
+                font-size: 17px;
+                position: relative;
+                top: 8px;
+                &:hover{font-weight: bold;}
+            }
+        }
+        #remove-all-div{
+            width: 30%;
+            height: 80%;
+            background-color: #c7968f;
+            border-radius: 5px;
+            text-align: center;
+            #remove-all{
+                background-color: #c7968f;
+                border: none;
+                font-size: 17px;
+                position: relative;
+                top: 8px;
+                &:hover{font-weight: bold;}
+            }
+        }
+        #price-summary{
+            width: 30%;
+            height: 80%;
+            p{
+                font-size: 20px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
+
+/* index.html */
+@media only screen and (max-width: 1441px){
+    header .container .nav-bar ul li{
+        margin-right: 70px;
+    }
+}
+@media only screen and (max-width: 1025px){
+    header .container .nav-bar ul li{
+        margin-right: 30px;
+    }
+    #best-products .container{
+        //border: 1px solid black;
+        height: 1250px;
+    }
+    .description-text .marks-buy-now{
+        width: 40%;
+    }
+    footer .container .footer-description p{
+        line-height: 20px;
+    }
+}
+@media only screen and (max-width: 770px){
+    header{
+        height: 130px;
+    }
+    header .container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    header .container .logo{
+        width: 60%;
+    }
+    header .container .nav-bar{
+        width: 50%;
+    }
+    header .container .nav-bar ul li{
+        margin-right: 34px;
+    }
+    #best-products .container h2{
+        font-size: 35px;
+    }
+    #best-products .container{
+        //border: 1px solid black;
+        height: 1850px;
+    }
+    #marks .marks-div{
+        height: 1000px;
+    }
+    #marks .marks-div .container{
+        flex-wrap: wrap;
+    }
+    footer .container .footer-description p{
+        line-height: 18px;
+        font-size: 15px;
+    }
+    footer .container .opening-hours ul li{
+        font-size: 16px;
+    }
+    footer .container .footer-description h5{
+        font-size: 20px;
+    }
+    footer .container .footer-contact h5{
+        font-size: 20px;
+    }
+    footer .container .opening-hours h5{
+        font-size: 20px;
+    }
+    #marks .marks-div .container .marks-levo img{
+        width: 400px;
+        height: 300px;
+    }
+    #marks .marks-div .container .marks-desno img{
+        width: 400px;
+        height: 300px;
+    }
+    footer{
+        height: 400px;
+    }
+    footer .container{
+        flex-wrap: wrap;
+    }
+    footer .container .footer-description{
+        width: 80%;
+        height: 47%;
+    }
+    footer .container .footer-contact{
+        width: 40%;
+        height: 47%;
+        margin-top: 20px;
+    }
+    footer .container .opening-hours{
+        width: 40%;
+        height: 47%;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 427px){
+    header .container .nav-bar{
+        width: 20%;
+        //border: 1px solid yellow;
+        height: 130px;
+    }header .container .logo{
+        width: 85%;
+        //border: 1px solid yellow;
+    }
+    header{
+        height: 220px;
+    }
+    header .container .nav-bar ul li{
+        margin-left: 10px;
+    }
+    
+}
+@media only screen and (max-width: 377px){
+    header .container .nav-bar ul li{
+        margin-left: 0px;
+    }
+    #best-products .container{
+        height: 2000px;
+    }
+    #marks .marks-div .container .marks-levo img{
+        width: 370px;
+    }
+    #marks .marks-div .container .marks-desno img{
+        width: 370px;
+    }
+    footer .container{
+        //border: 1px solid white;
+        height: 90%;
+    }
+}
+@media only screen and (max-width: 322px){
+    #marks .marks-div .container .marks-levo img{
+        width: 320px;
+    }
+    #marks .marks-div .container .marks-desno img{
+        width: 320px;
+    }
+    footer{
+        height: 600px;
+    }
+    footer .container .footer-description, footer .container .footer-contact, footer .container .opening-hours{
+        width: 80%;
+        height: 33%;
+        margin-bottom: 20px;
+    }
+    #best-products .container h2{
+        font-size: 28px;
+    }
+}
+
+/* shop.html */
+
+@media only screen and (max-width: 1025px){
+    main .container #main-levo #brends-form ul li .brendovi{
+        margin-left: 80px;
+    }
+    main .container #main-levo #price-form ul li .price{
+        margin-left: 80px;
+    }
+    main .container #main-desno .artikl{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 770px){
+    main .container #main-levo #brends-form ul li .brendovi, main .container #main-levo #price-form ul li .price{
+        margin-left: 50px;
+    }
+    main .container #main-desno .artikl{
+        width: 45%;
+    }
+    #cart{
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 427px){
+    main .container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    main .container #main-levo{
+        width: 80%;
+    }
+    main .container #main-desno{
+        width: 80%;
+    }
+    main .container #main-desno .artikl{
+        width: 60%;
+    }
+    #cart a{
+        font-size: 22px;
+        top: 8px;
+    }
+    #cart #broj-porudzbina{
+        width: 10px;
+        height: 10px;
+        font-size: 9px;
+    }
+    #cart{
+        width: 40px;
+        height: 40px;
+    }
+    main .container #main-levo h2{
+        font-size: 30px;
+    }
+    main .container #main-levo #sort-form #sort{
+        height: 30px;
+    }
+    main .container #main-levo #brends-form ul li .brendovi, main .container #main-levo #price-form ul li .price{
+        width: 20px;
+        height: 20px;
+    }
+    main .container #main-levo #search-form #search{
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 377px){
+    main .container #main-desno .artikl{
+        width: 80%;
+    }
+    #cart{
+        top: 10px;
+        right: 20px;
+    }
+}
+
+
+
+/* contact.html */
+
+@media only screen and (max-width: 1025px){
+    #contact-main .container h2{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 427px){
+    #contact-main .container{
+        height: 700px;
+        //border: 1px solid black;
+    }
+    #contact-main .container .forms{
+        height: 600px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #contact-main .container .forms .forms-part{
+        width: 90%;
+        height: 50%;
+    }
+    #contact-main .container h2{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 377px){
+    #contact-main .container h2{
+        font-size: 22px;
+    }
+}
+
+
+/* cart.html */
+@media only screen and (max-width: 770px){
+    #main-korpa .container .drzac-korpa .korpa-blok img{
+        width: 150px;
+        height: 150px;
+    }
+    #main-korpa .container .add-remove{
+        width: 82%;
+    }
+    #main-korpa #sum-all{
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 427px){
+    #main-korpa .container .drzac-korpa .korpa-blok p{
+        font-size: 17px;
+    }
+    #main-korpa .container .drzac-korpa .korpa-blok img{
+        width: 80px;
+        height: 80px;
+        margin-top: 50px;
+    }
+    #main-korpa .container .add-remove .add-quantity .add-one-more{
+        font-size: 12px;
+    }
+    #main-korpa .container .add-remove .quantity-down .down-quantity{
+        font-size: 12px;
+    }
+    #main-korpa .container .add-remove .remove-product .product-remove{
+        font-size: 12px;
+    }
+    #main-korpa .container .add-remove{
+        width: 90%;
+    }
+    #main-korpa .container .add-remove .remove-product{
+        width: 29%;
+    }
+    #main-korpa #sum-all #price-summary p{
+        font-size: 15px;
+    }
+    #main-korpa #sum-all #purchase-div #purchase, #main-korpa #sum-all #remove-all-div #remove-all{
+        font-size: 15px;
+    }
+    #main-korpa #sum-all{
+        width: 70%;
+    }
+    #main-korpa #sum-all #remove-all-div{
+        width: 32%;
+    }
+}
+@media only screen and (max-width: 377px){
+    #main-korpa .container .drzac-korpa .korpa-blok p{
+        font-size: 14px;
+    }
+    #main-korpa .container .drzac-korpa .korpa-blok img{
+        width: 75px;
+        height: 75px;
+    }
+    #main-korpa .container .add-remove .add-quantity{
+        width: 30%;
+    }
+    #main-korpa .container .add-remove .quantity-down{
+        width: 30%;
+    }
+    #main-korpa .container .add-remove .remove-product{
+        width: 33%;
+    }
+    #main-korpa #sum-all #remove-all-div{
+        width: 37%;
+    }
+}
+@media only screen and (max-width: 322px){
+    #main-korpa .container .drzac-korpa .korpa-blok img{
+        width: 60px;
+        height: 60px;
+    }
+    #main-korpa .container .add-remove{
+        width: 100%;
+    }
+    #main-korpa .container .add-remove .remove-product{
+        width: 35%;
+    }
+    #main-korpa #sum-all{
+        width: 85%;
+    }
+}
