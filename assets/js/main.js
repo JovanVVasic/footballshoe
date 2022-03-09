@@ -338,6 +338,9 @@ function pokupiPodatke(file, funkcija) {
             }
             greske.push("ime");
         }
+        else{
+            document.getElementById('ime').style.backgroundColor = 'white';
+        }
 
         if(!reLastName.test(lastName)){
             if(lastName==''){
@@ -352,6 +355,9 @@ function pokupiPodatke(file, funkcija) {
                 document.getElementById('message-sent').style.visibility = 'hidden';
             }
             greske.push("prezime");
+        }
+        else{
+            document.getElementById('prezime').style.backgroundColor = 'white';
         }
 
         if(!reEmail.test(email)){
@@ -368,6 +374,9 @@ function pokupiPodatke(file, funkcija) {
             }
             greske.push("email");
         }
+        else{
+            document.getElementById('email').style.backgroundColor = 'white';
+        }
 
         if(!reNumber.test(telefon)){
             if(telefon==''){
@@ -382,6 +391,9 @@ function pokupiPodatke(file, funkcija) {
                 document.getElementById('message-sent').style.visibility = 'hidden';
             }
             greske.push("telefon");
+        }
+        else{
+            document.getElementById('telefon').style.backgroundColor = 'white';
         }
 
         if(textarea == ''){
@@ -596,6 +608,7 @@ function pokupiPodatke(file, funkcija) {
 
     function purchase(){
         let produkti = procitajKorpu('korpa');
+        let sviProdukti = procitajKorpu('products')
         let greske = [];
         for(let p of produkti){
             if(p.kolicina>5){
@@ -611,10 +624,41 @@ function pokupiPodatke(file, funkcija) {
             ispisiCart();
         }
         else{
+            let products = procitajKorpu('korpa');
+            let allProducts = procitajKorpu('products')
+            let greske = [];
+            for(let i=0; i<products.length; i++){
+                for(let y=0; y<allProducts.length; y++){
+                    if(products[i].id==allProducts[y].id){
+                        let velicina = prompt("Enter the size of " +allProducts[y].name+ ":"); 
+                        console.log(velicina);
+                        if(velicina<39 || velicina>48){
+                            greske.push(products[i].id)
+                        }
+                    }
+                }
+            }
+            console.log(greske);
+            if(greske.length>0){
+                for(let i=0; i<sviProdukti.length; i++){
+                    for(let y=0; y<greske.length; y++){
+                        if(sviProdukti[i].id==greske[y]){
+                            prompt("Size of "+sviProdukti[i].name+" have to be between 39 and 48. Please enter the rigth size:");
+                        }
+                    }
+                }
+            localStorage.removeItem('korpa');
+            ispisiCart();
+            alert("You ordered successfully");
+            }
+            else{
             localStorage.removeItem('korpa');
             ispisiCart();
             //console.log("nema greske");
+            
+            
             alert("You ordered successfully");
+            }
         }
     
     }

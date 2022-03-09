@@ -255,6 +255,24 @@ footer{
         }
     }
 }
+#doc{
+    width: 100%;
+    height: 40px;
+    background-color: $mainBoja;
+    .doc-centar{
+        margin: 0px auto;
+        width: 30%;
+        height: 30px;
+        //border: 1px solid yellow;
+        text-align: center;
+        a{
+            margin-left: 10px;
+            margin-right: 10px;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
 
 
 
@@ -798,6 +816,9 @@ main{
     }
     header .container .nav-bar ul li{
         margin-left: 10px;
+    }
+    #doc .doc-centar{
+        width: 50%;
     }
     
 }
