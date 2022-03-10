@@ -5,6 +5,7 @@
 
 body {
   background-color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* index.html */
@@ -44,7 +45,7 @@ header .container .nav-bar ul {
 
 header .container .nav-bar ul li {
   float: left;
-  margin-right: 80px;
+  margin-right: 70px;
   margin-top: 10px;
 }
 
@@ -254,7 +255,7 @@ footer .container .footer-description h5 {
 }
 
 footer .container .footer-description p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 25px;
   margin-top: 20px;
 }
@@ -325,6 +326,10 @@ footer .container .opening-hours ul li {
   margin-right: 10px;
   color: white;
   font-size: 20px;
+}
+
+#doc .doc-centar a:hover {
+  color: black;
 }
 
 /* shop.html */
@@ -443,7 +448,7 @@ main .container #main-desno .artikl .artikl-picture .artikl-slika {
 }
 
 main .container #main-desno .artikl h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: lighter;
 }
 
@@ -638,7 +643,7 @@ main .container #main-desno .prazno-artikli p {
 
 #main-korpa .container .drzac-korpa .korpa-blok p {
   margin-top: 70px;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 #main-korpa .container .drzac-korpa .korpa-blok img {
@@ -788,13 +793,19 @@ main .container #main-desno .prazno-artikli p {
 /* index.html */
 @media only screen and (max-width: 1441px) {
   header .container .nav-bar ul li {
-    margin-right: 70px;
+    margin-right: 60px;
+  }
+  #cart {
+    right: 100px;
   }
 }
 
 @media only screen and (max-width: 1025px) {
   header .container .nav-bar ul li {
-    margin-right: 30px;
+    margin-right: 20px;
+  }
+  footer .container .opening-hours ul li {
+    font-size: 17px;
   }
   #best-products .container {
     height: 1250px;
@@ -823,7 +834,7 @@ main .container #main-desno .prazno-artikli p {
     width: 60%;
   }
   header .container .nav-bar {
-    width: 50%;
+    width: 58%;
   }
   header .container .nav-bar ul li {
     margin-right: 34px;
@@ -832,7 +843,7 @@ main .container #main-desno .prazno-artikli p {
     font-size: 35px;
   }
   #best-products .container {
-    height: 1850px;
+    height: 1950px;
   }
   #marks .marks-div {
     height: 1000px;
@@ -843,10 +854,11 @@ main .container #main-desno .prazno-artikli p {
   }
   footer .container .footer-description p {
     line-height: 18px;
-    font-size: 15px;
+    font-size: 14px;
+    margin-top: 5px;
   }
   footer .container .opening-hours ul li {
-    font-size: 16px;
+    font-size: 14px;
   }
   footer .container .footer-description h5 {
     font-size: 20px;
@@ -923,6 +935,9 @@ main .container #main-desno .prazno-artikli p {
   footer .container {
     height: 90%;
   }
+  .description-text p {
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 322px) {
@@ -942,6 +957,9 @@ main .container #main-desno .prazno-artikli p {
   }
   #best-products .container h2 {
     font-size: 28px;
+  }
+  .description-text .marks-buy-now a {
+    font-size: 16px;
   }
 }
 
@@ -966,7 +984,10 @@ main .container #main-desno .prazno-artikli p {
     width: 45%;
   }
   #cart {
-    right: 20px;
+    right: 60px;
+  }
+  main .container #main-levo #brends-form ul li, main .container #main-levo #price-form ul li {
+    font-size: 16px;
   }
 }
 

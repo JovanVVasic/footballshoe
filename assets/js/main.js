@@ -165,7 +165,7 @@ function pokupiPodatke(file, funkcija) {
             for(let i=0; i<niz.length;i++){
                 html+=`<div class="artikl">
                             <div class="artikl-picture">
-                                <img src="./assets/img/${niz[i].image}" alt="Picture" class="artikl-slika"/>
+                                <img src="./assets/img/${niz[i].image.src}" alt="${niz[i].image.alt}" class="artikl-slika"/>
                             </div>
                             <h5>${niz[i].name}</h5>
                             <p class="artikl-text">${niz[i].price.newPrice} €</p>
@@ -541,7 +541,7 @@ function pokupiPodatke(file, funkcija) {
         for(let n of niz){
             html += ` <div class="drzac-korpa">
                         <div class="korpa-blok">
-                            <img src="./assets/img/${n.image}" alt="slika"/>
+                            <img src="./assets/img/${n.image.src}" alt="${n.image.alt}"/>
                         </div>
                         <div class="korpa-blok">
                             <p>${n.name}</p>

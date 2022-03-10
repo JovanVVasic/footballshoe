@@ -9,6 +9,7 @@
 $mainBoja: #2c374a;
 body{
     background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -42,7 +43,7 @@ header{
                 list-style-type: none;
                 li{
                     float: left;
-                    margin-right: 80px;
+                    margin-right: 70px;
                     margin-top: 10px;
                     a{
                         text-decoration: none;
@@ -210,7 +211,7 @@ footer{
                 font-weight: lighter;
             }
             p{
-                font-size: 18px;
+                font-size: 15px;
                 line-height: 25px;
                 margin-top: 20px;
             }
@@ -270,6 +271,7 @@ footer{
             margin-right: 10px;
             color: white;
             font-size: 20px;
+            &:hover{color: black}
         }
     }
 }
@@ -371,7 +373,7 @@ main{
                     }
                 }
                 h5{
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: lighter;
                 }
                 .artikl-text{
@@ -549,7 +551,7 @@ main{
                 text-align: center;
                 p{
                     margin-top: 70px;
-                    font-size: 25px;
+                    font-size: 22px;
                 }
                 img{
                     width: 190px;
@@ -708,12 +710,18 @@ main{
 /* index.html */
 @media only screen and (max-width: 1441px){
     header .container .nav-bar ul li{
-        margin-right: 70px;
+        margin-right: 60px;
+    }
+    #cart{
+        right: 100px;
     }
 }
 @media only screen and (max-width: 1025px){
     header .container .nav-bar ul li{
-        margin-right: 30px;
+        margin-right: 20px;
+    }
+    footer .container .opening-hours ul li{
+        font-size: 17px;
     }
     #best-products .container{
         //border: 1px solid black;
@@ -739,7 +747,7 @@ main{
         width: 60%;
     }
     header .container .nav-bar{
-        width: 50%;
+        width: 58%;
     }
     header .container .nav-bar ul li{
         margin-right: 34px;
@@ -749,7 +757,7 @@ main{
     }
     #best-products .container{
         //border: 1px solid black;
-        height: 1850px;
+        height: 1950px;
     }
     #marks .marks-div{
         height: 1000px;
@@ -759,10 +767,11 @@ main{
     }
     footer .container .footer-description p{
         line-height: 18px;
-        font-size: 15px;
+        font-size: 14px;
+        margin-top: 5px;
     }
     footer .container .opening-hours ul li{
-        font-size: 16px;
+        font-size: 14px;
     }
     footer .container .footer-description h5{
         font-size: 20px;
@@ -839,6 +848,9 @@ main{
         //border: 1px solid white;
         height: 90%;
     }
+    .description-text p{
+        font-size: 17px;
+    }
 }
 @media only screen and (max-width: 322px){
     #marks .marks-div .container .marks-levo img{
@@ -857,6 +869,9 @@ main{
     }
     #best-products .container h2{
         font-size: 28px;
+    }
+    .description-text .marks-buy-now a{
+        font-size: 16px;
     }
 }
 
@@ -881,7 +896,10 @@ main{
         width: 45%;
     }
     #cart{
-        right: 20px;
+        right: 60px;
+    }
+    main .container #main-levo #brends-form ul li, main .container #main-levo #price-form ul li{
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 427px){
