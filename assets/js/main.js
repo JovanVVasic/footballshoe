@@ -63,6 +63,7 @@ if(url=='/contact.html'){
 }
 if(url=='/cart.html'){
     ispisiCart();
+    document.getElementById('ugasi').addEventListener('click',ugasiPurchase);
 }
 
 /* ajax funkcija */
@@ -608,7 +609,6 @@ function pokupiPodatke(file, funkcija) {
 
     function purchase(){
         let produkti = procitajKorpu('korpa');
-        let sviProdukti = procitajKorpu('products')
         let greske = [];
         for(let p of produkti){
             if(p.kolicina>5){
@@ -619,48 +619,12 @@ function pokupiPodatke(file, funkcija) {
                 ispisiCart();
             }
         }
-        //console.log(greske.length)
         if(greske.length>0){
             ispisiCart();
         }
         else{
-            let products = procitajKorpu('korpa');
-            let allProducts = procitajKorpu('products')
-            let greske = [];
-            for(let i=0; i<products.length; i++){
-                for(let y=0; y<allProducts.length; y++){
-                    if(products[i].id==allProducts[y].id){
-                        let velicina = prompt("Enter the size of " +allProducts[y].name+ ":"); 
-                        console.log(velicina);
-                        if(velicina<39 || velicina>48){
-                            greske.push(products[i].id)
-                        }
-                    }
-                }
-            }
-            console.log(greske);
-            if(greske.length>0){
-                for(let i=0; i<sviProdukti.length; i++){
-                    for(let y=0; y<greske.length; y++){
-                        if(sviProdukti[i].id==greske[y]){
-                            prompt("Size of "+sviProdukti[i].name+" have to be between 39 and 48. Please enter the rigth size:");
-                        }
-                    }
-                }
-            localStorage.removeItem('korpa');
-            ispisiCart();
-            alert("You ordered successfully");
-            }
-            else{
-            localStorage.removeItem('korpa');
-            ispisiCart();
-            //console.log("nema greske");
-            
-            
-            alert("You ordered successfully");
-            }
+            otovriPurchase();
         }
-    
     }
 
     function addOneMore(){
@@ -693,4 +657,89 @@ function pokupiPodatke(file, funkcija) {
         dodavanjeULocalStorage('korpa',produkti);
         ispisiCart();
     }
+
+    function otovriPurchase(){
+        document.getElementById('iskacujuci-prozor').style.visibility = 'visible';
+        let produkti = procitajKorpu('korpa');
+        let sviProdukti = procitajKorpu('products');
+        console.log(produkti);
+        console.log(sviProdukti);
+
+        let html = `<p>Enter your name</p>
+        <input type="text" name="name-cart" id="name-cart" class="uredi-input" placeholder="Name:"/>
+        <p>Enter your address</p>
+        <input type="text" name="address-cart" id="address-cart" class="uredi-input" placeholder="Address:"/>`;
+        for(let i=0; i<produkti.length; i++){
+            for(let y=0; y<sviProdukti.length; y++){
+                if(produkti[i].id == sviProdukti[y].id){
+                    html+=`<p>Enter size of ${sviProdukti[y].name}</p>
+                        <input type="text" name="address-cart" class="size-provera uredi-input"/>`;
+                }
+            }
+        }
+        html+='</br><input type="button" id="naruci-btn" value="Purchase"/>';
+        $('#forma-cart').html(html);
+        document.getElementById('naruci-btn').addEventListener('click', finalPurchase);
+    }
+
+    function ugasiPurchase(){
+        document.getElementById('iskacujuci-prozor').style.visibility = 'hidden';
+    }
+
+    function finalPurchase(){
+        let ime = document.getElementById('name-cart').value;
+        let adresa = document.getElementById('address-cart').value;
+        let greske = [];
+        let reAdresa = /^[A-Z0-9][a-z0-9]{0,15}\s([A-Z0-9][a-z0-9]{0,15})+/;
+
+        console.log(ime);
+        console.log(adresa);
+        console.log(!reName.test(ime));
+        
+
+        if(!reName.test(ime)){
+            if(ime==''){
+                document.getElementById('name-cart').setAttribute('placeholder', "Name can't be empty...");
+            }
+            else{
+                document.getElementById('name-cart').setAttribute('placeholder', "Wrong name entry...");
+            }
+            greske.push('name');
+            document.getElementById('name-cart').value = '';
+        }
+        else{
+            document.getElementById('name-cart').style.color = "black";
+        }
+
+        if(!reAdresa.test(adresa)){
+            if(adresa==''){
+                document.getElementById('address-cart').setAttribute('placeholder', "Address can't be empty...");
+            }
+            else{
+                document.getElementById('address-cart').setAttribute('placeholder', "Wrong adress entry...");
+            }
+            greske.push('address');
+            document.getElementById('address-cart').value = '';
+        }
+        else{
+            document.getElementById('address-cart').style.color = "black";
+        }
+
+        let velicinaProvera = $('.size-provera').val()
+
+        if(velicinaProvera<39 || velicinaProvera>48){
+            $('.size-provera').attr('placeholder', "Size has to be between 39 and 48");
+            $('.size-provera').val('');
+            greske.push('size');
+        }
+
+        //console.log(greske)
+
+        if(greske.length==0){
+            localStorage.removeItem('korpa');
+            ispisiCart();
+            alert('You ordered successfully!');
+            document.getElementById('iskacujuci-prozor').style.visibility = 'hidden';
+        }
+    };
 };

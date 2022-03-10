@@ -789,6 +789,57 @@ main .container #main-desno .prazno-artikli p {
   margin-top: 5px;
 }
 
+#iskacujuci-prozor {
+  position: fixed;
+  width: 500px;
+  background-color: rgba(44, 55, 74, 0.98);
+  top: 100px;
+  left: 500px;
+  border-radius: 20px;
+  visibility: hidden;
+}
+
+#iskacujuci-prozor .dugme-iks {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 15px;
+  left: 465px;
+}
+
+#iskacujuci-prozor .dugme-iks .fa-window-close {
+  font-size: 25px;
+  color: white;
+}
+
+#iskacujuci-prozor .dugme-iks .fa-window-close:hover {
+  color: #060606;
+}
+
+#forma-cart {
+  margin-left: 20px;
+}
+
+.uredi-input {
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#naruci-btn {
+  width: 80px;
+  height: 30px;
+  color: #060606;
+  margin-bottom: 10px;
+}
+
+#naruci-btn:hover {
+  background-color: #060606;
+  color: white;
+}
+
 /* responsive design */
 /* index.html */
 @media only screen and (max-width: 1441px) {
@@ -1082,6 +1133,12 @@ main .container #main-desno .prazno-artikli p {
 }
 
 /* cart.html */
+@media only screen and (max-width: 1025px) {
+  #iskacujuci-prozor {
+    left: 250px;
+  }
+}
+
 @media only screen and (max-width: 770px) {
   #main-korpa .container .drzac-korpa .korpa-blok img {
     width: 150px;
@@ -1092,6 +1149,9 @@ main .container #main-desno .prazno-artikli p {
   }
   #main-korpa #sum-all {
     width: 55%;
+  }
+  #iskacujuci-prozor {
+    left: 160px;
   }
 }
 
@@ -1131,6 +1191,13 @@ main .container #main-desno .prazno-artikli p {
   #main-korpa #sum-all #remove-all-div {
     width: 32%;
   }
+  #iskacujuci-prozor {
+    left: 20px;
+    width: 400px;
+  }
+  #iskacujuci-prozor .dugme-iks {
+    left: 350px;
+  }
 }
 
 @media only screen and (max-width: 377px) {
@@ -1153,6 +1220,13 @@ main .container #main-desno .prazno-artikli p {
   #main-korpa #sum-all #remove-all-div {
     width: 37%;
   }
+  #iskacujuci-prozor {
+    width: 370px;
+    left: 2px;
+  }
+  #iskacujuci-prozor .dugme-iks {
+    left: 330px;
+  }
 }
 
 @media only screen and (max-width: 322px) {
@@ -1168,6 +1242,15 @@ main .container #main-desno .prazno-artikli p {
   }
   #main-korpa #sum-all {
     width: 85%;
+  }
+  .uredi-input {
+    width: 250px;
+  }
+  #iskacujuci-prozor {
+    width: 310px;
+  }
+  #iskacujuci-prozor .dugme-iks {
+    left: 270px;
   }
 }
 /*# sourceMappingURL=style.css.map */
